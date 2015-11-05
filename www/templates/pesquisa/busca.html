@@ -1,0 +1,22 @@
+﻿<div ng-controller="BuscaController">
+    <ion-header-bar class="main-color1">
+        <a class="button button-clear back" href="#/">&nbsp;</a>
+        <h1 ng-bind="::especialidade_medica.name"></h1>
+        <img ng-src="{{user.Foto}}" alt="Foto do Usuário" class="usuario" />
+    </ion-header-bar>
+    <ion-view view-title="{{especialidade_medica.name}}" class="pane-busca">
+        <ion-content>
+            <ion-list class="search-results">
+                <ion-item ng-repeat="item in buscaItems" ng-click="selectMedico(item)">
+                    <img ng-src="{{item.image}}" alt="Foto do Médico" class="foto-medico" />
+                    <div class="info">
+                        <span class="nome" ng-bind="::item.name"></span>
+                        <span class="endereco" ng-bind="::item.address"></span>
+                    </div>
+                </ion-item>
+            </ion-list>
+            <ion-infinite-scroll on-infinite="loadMore()" distance="1%">
+            </ion-infinite-scroll>
+        </ion-content>
+    </ion-view>
+</div>

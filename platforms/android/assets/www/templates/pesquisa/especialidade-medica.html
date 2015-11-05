@@ -1,0 +1,19 @@
+﻿<div ng-controller="EspecialidadeMedicaListaController">
+    <ion-header-bar class="main-color1">
+        <a class="button button-clear back" href="#/">&nbsp;</a>
+        <h1>Busca por Especialidade</h1>
+        <img ng-src="{{user.Foto}}" alt="Foto do Usuário" class="usuario" />
+    </ion-header-bar>
+    <ion-view view-title="Especialidade Médica" class="pane-especialidade-medica">
+        <ion-content>
+            <div class="search">
+                <img src="images/icon-pesquisar.png" />
+                <input type="text" placeholder="Pesquisar" ng-model="filterHash" />
+            </div>
+            <div class="title-bar">Médicos</div>
+            <ion-list class="search-results">
+                <ion-item ng-repeat="item in especialidadeItems | filter: filterItems" ng-click="selectEspecialidade(item)" href="{{item.link}}">{{item.name}}</ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-view>
+</div>

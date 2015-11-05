@@ -1,0 +1,31 @@
+﻿<ion-header-bar class="main-color1">
+    <a class="button button-clear back" href="#/">&nbsp;</a>
+    <img src="images/top-logos.png" />
+</ion-header-bar>
+<ion-view view-title="Login" class="pane-login">
+    <ion-content ng-controller="LoginController">
+        <h1>Login</h1>
+        <div class="form">
+            <p>
+                <label for="email">E-mail</label><br />
+                <div class="group" ng-class="{'focus': email_focus == true}">
+                    <span class="icon icon-login"></span>
+                    <input type="text" id="email" ng-model="email" ng-focus="email_focus = true" ng-blur="email_focus = false" />
+                </div>
+            </p>
+            <p>
+                <label for="senha">Senha</label><br />
+                <div class="group" ng-class="{'focus': senha_focus == true}">
+                    <span class="icon icon-senha"></span>
+                    <input type="password" id="senha" ng-model="senha" ng-focus="senha_focus = true" ng-blur="senha_focus = false" />
+                </div>
+            </p>
+        </div>
+        <div class="buttons main-color1">
+            <button class="login btn btn-color2" ng-click="Login()">Login</button>
+            <a href="#/usuario/esqueci-senha" class="esqueci-minha-senha">Esqueci minha senha</a>
+            <a href="#/usuario/cadastro" class="cadastro">Não tem conta? <strong>Faça cadastro</strong></a>
+            <div class="clearfix"></div>
+        </div>
+    </ion-content>
+</ion-view>

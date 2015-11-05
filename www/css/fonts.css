@@ -1,0 +1,23 @@
+﻿@font-face {
+    font-family: 'SimplonOi Headline';
+    src: url('../resources/fonts/Simplon-Oi-Headline/OTF/SimplonOi-Headline.otf') format('opentype');
+    src: url('../resources/fonts/Simplon-Oi-Headline/WOFF/SimplonOi-Headline.woff') format('woff'),
+    url('../resources/fonts/Simplon-Oi-Headline/TTF/SimplonOi-Headline.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Simplon BP';
+    src: url('../resources/fonts/Simplon-BP/OTF/SimplonBP-Regular.otf') format('opentype');
+    src: url('../resources/fonts/Simplon-BP/WOFF/SSimplonBP-Regular.woff') format('woff'),
+    url('../resources/fonts/Simplon-BP/TTF/SimplonBP-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Simplon BP';
+    src: url('../resources/fonts/Simplon-BP/OTF/SimplonBP-Bold.otf') format('opentype');
+    src: url('../resources/fonts/Simplon-BP/WOFF/SSimplonBP-Bold.woff') format('woff'),
+    url('../resources/fonts/Simplon-BP/TTF/SimplonBP-Bold.ttf') format('truetype');
+    font-weight: bold;
+}

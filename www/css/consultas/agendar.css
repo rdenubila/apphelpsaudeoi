@@ -1,0 +1,86 @@
+﻿.pane-agendar .conteudo {
+    width: 96%;
+    margin: 25px 2%;
+}
+
+.pane-agendar .conteudo img.foto-medico {
+    width: 95px;
+    height: 95px;
+    -webkit-border-radius: 50% 50%;
+    -moz-border-radius: 50% / 50%;
+    border-radius: 50% / 50%;
+    float: left;
+    margin-right: 29px;
+}
+
+.pane-agendar .conteudo span.medico-nome {
+    display: block;
+    font-size: 30px;
+    line-height: 30px;
+    color: #3F3F3F;
+}
+
+.pane-agendar .conteudo span.especialidade-medica-nome {
+    color: #00A596;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.pane-agendar .conteudo div.descricao {
+    clear: left;
+    margin-top: 50px;
+}
+
+.datetimepicker .active.active {
+    background-color: #00A596 !important;
+    background-image: none !important;
+    border-color: transparent !important;
+}
+
+.pane-agendar div.horarios {
+    border: 2px solid #00A596;
+    width: 100%;
+}
+
+.pane-agendar div.horarios div {
+    width: 20%;
+    line-height: 80px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    border-right: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.pane-agendar div.horarios div.selected {
+    background-color: #00A596;
+    color: #fff;
+    border-bottom-color: #00A596;
+}
+
+.pane-agendar div.endereco {
+    clear: left;
+}
+
+.pane-agendar button.agendar-consulta {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.pane-agendar select {
+    padding-left: 0;
+}
+
+.pane-agendar div.location-phones span.phone:last-child span.separador {
+    display: none;
+}
+
+.pane-agendar div.location-phones label {
+    font-weight: bold;
+}
+
+.pane-agendar div.location-phones label,
+.pane-agendar div.location-phones span.number,
+.pane-agendar div.location-phones span.separador {
+    margin-right: 5px;
+}

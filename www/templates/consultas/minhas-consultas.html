@@ -1,0 +1,15 @@
+﻿<div ng-controller="MinhasConsultasController">
+    <ion-header-bar class="main-color1">
+        <a class="button button-clear back" href="#/">&nbsp;</a>
+        <h1>Minhas Consultas</h1>
+        <img ng-src="{{user.Foto}}" alt="Foto do Usuário" class="usuario" />
+    </ion-header-bar>
+    <ion-view view-title="Minhas Consultas" class="pane-minhas-consultas">
+        <ion-content>
+            <div class="title-bar">Histórico</div>
+            <ion-list class="historico">
+                <ion-item ng-repeat="item in especialidadeItems | filter: filterItems" ng-click="selectEspecialidade(item)" href="{{item.link}}">{{item.name}}</ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-view>
+</div>

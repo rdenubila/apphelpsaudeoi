@@ -1,0 +1,23 @@
+﻿<div ng-controller="PlanoSaudeListaController">
+    <ion-header-bar class="main-color1">
+        <a class="button button-clear back" href="#/">&nbsp;</a>
+        <h1>Forma de Pagamento</h1>
+        <img ng-src="{{user.Foto}}" alt="Foto do Usuário" class="usuario" />
+    </ion-header-bar>
+    <ion-view view-title="Forma de Pagamento" class="pane-forma-de-pagamento">
+        <ion-content>
+            <ion-radio ng-model="forma_de_pagamento" ng-value="'particular'" ng-click="selectFormaPagamentoParticular()">Particular</ion-radio>
+            <ion-radio ng-model="forma_de_pagamento" ng-value="'plano-de-saude'">Plano de Saúde</ion-radio>
+            <div ng-show="forma_de_pagamento == 'plano-de-saude'">
+                <div class="search">
+                    <img src="images/icon-pesquisar.png" />
+                    <input type="text" placeholder="Pesquisar" ng-model="filterHash" />
+                </div>
+                <div class="title-bar">Planos</div>
+                <ion-list class="search-results">
+                    <ion-item ng-repeat="item in planoSaudeItems | filter: filterItems" ng-click="selectPlanoSaude(item)" href="{{item.link}}">{{item.nome}}</ion-item>
+                </ion-list>
+            </div>
+        </ion-content>
+    </ion-view>
+</div>

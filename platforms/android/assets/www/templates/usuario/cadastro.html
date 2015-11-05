@@ -1,0 +1,75 @@
+﻿<ion-header-bar class="main-color1">
+    <a class="button button-clear back" href="#/">&nbsp;</a>
+    <img src="images/top-logos.png" />
+</ion-header-bar>
+<ion-view view-title="Cadastro" class="pane-login">
+    <ion-content ng-controller="CadastroController">
+        <h1>Cadastro</h1>
+        <div class="form">
+            <p>
+                <label for="nome">Nome Completo</label><br />
+                <div class="group" ng-class="{'focus': nome_focus == true}">
+                    <span class="icon icon-login"></span>
+                    <input type="text" id="nome" ng-model="usuario.nome" ng-focus="nome_focus = true" ng-blur="nome_focus = false" />
+                </div>
+            </p>
+            <p>
+                <label for="email">E-mail</label><br />
+                <div class="group" ng-class="{'focus': email_focus == true}">
+                    <span class="icon icon-email"></span>
+                    <input type="text" id="email" ng-model="usuario.email" ng-focus="email_focus = true" ng-blur="email_focus = false" />
+                </div>
+            </p>
+            <p>
+                <label for="senha">Senha</label><br />
+                <div class="group" ng-class="{'focus': senha_focus == true}">
+                    <span class="icon icon-senha"></span>
+                    <input type="password" id="senha" ng-model="usuario.senha" ng-focus="senha_focus = true" ng-blur="senha_focus = false" />
+                </div>
+            </p>
+            <div class="container-ddd">
+                <p>
+                    <label for="ddd">DDD</label><br />
+                    <div class="group" ng-class="{'focus': ddd_focus == true}">
+                        <span class="icon icon-telefone"></span>
+                        <input type="text" id="ddd" ng-model="usuario.ddd" ng-focus="ddd_focus = true" ng-blur="ddd_focus = false" ui-mask="99" />
+                    </div>
+                </p>
+            </div>
+            <div class="container-telefone">
+                <p>
+                    <label for="telefone">Telefone</label><br />
+                    <div class="group" ng-class="{'focus': telefone_focus == true}">
+                        <span class="icon icon-telefone"></span>
+                        <input type="text" id="telefone" ng-model="usuario.telefone" ng-focus="telefone_focus = true" ng-blur="telefone_focus = false" ui-mask="99999-9999" />
+                    </div>
+                </p>
+            </div>
+            <p>
+                <label for="plano_saude">Plano de Saúde</label><br />
+                <div class="group" ng-class="{'focus': plano_saude_focus == true}">
+                    <span class="icon icon-plano-saude"></span>
+                    <select ng-model="usuario.plano_saude" ng-options="item as item.nome for item in planoSaudeItems" ng-focus="plano_saude_focus = true" ng-blur="plano_saude_focus = false">
+                        <option value="" ng-show="planoSaudeItems.length == 0">Carregando...</option>
+                        <option value="-1">NENHUM</option>
+                    </select>
+                </div>
+            </p>
+            <div ng-show="usuario.plano_saude.id > 0">
+                <p>
+                    <label for="plano_saude_numero">Número do Plano de Saúde</label><br />
+                    <div class="group" ng-class="{'focus': plano_saude_numero_focus == true}">
+                        <span class="icon icon-plano-saude"></span>
+                        <input type="text" id="plano_saude_numero" ng-model="usuario.plano_saude_numero" ng-focus="plano_saude_numero_focus = true" ng-blur="plano_saude_numero_focus = false" />
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="buttons main-color1">
+            <a href="#" target="_blank" class="termos-de-uso">Ao clicar em cadastrar, você concorda com os nossos <strong>Termos de Uso</strong></a>
+            <button class="cadastrar btn btn-color2" ng-click="Cadastrar()">Cadastrar</button>
+            <a href="#/usuario/login" class="login">Já tem conta? <strong>Faça login</strong></a>
+            <div class="clearfix"></div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,17 @@
+﻿<ion-header-bar class="main-color1">
+    <img src="images/top-logos.png" />
+</ion-header-bar>
+<ion-view view-title="Home" class="pane-home">
+    <ion-content ng-controller="HomeController">
+        <h1>Pesquise os médicos abaixo</h1>
+        <ion-list>
+            <ion-item ng-repeat="item in menuItems" href="#/pesquisa/{{item.ref}}" class="item item-complex {{item.ref}}" ng-class="{'selected': is_Selected(item.ref)}"><h2>{{item.texto}}</h2></ion-item>
+        </ion-list>
+        <div class="buttons">
+            <button class="pesquisar-medicos btn-color2" ng-click="PesquisarMedicos()">Pesquisar Médicos</button>
+            <a href="#/usuario/login" class="login btn btn-color3" ng-hide="user.AuthenticationToken">Login</a>
+            <a href="#/usuario/cadastro" class="cadastro btn btn-color3" ng-hide="user.AuthenticationToken">Cadastro</a>
+            <div class="clearfix"></div>
+        </div>
+    </ion-content>
+</ion-view>

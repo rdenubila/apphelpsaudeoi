@@ -1,0 +1,46 @@
+﻿<div ng-controller="AgendarController">
+    <ion-header-bar class="main-color1">
+        <a class="button button-clear back" href="#/pesquisa/busca">&nbsp;</a>
+        <h1>Agendar</h1>
+        <img ng-src="{{user.Foto}}" alt="Foto do Usuário" class="usuario" />
+    </ion-header-bar>
+    <ion-view view-title="Agendar" class="pane-agendar">
+        <ion-content>
+            <div class="conteudo">
+                <div class="informacoes-principais">
+                    <img ng-src="{{medico.image}}" class="foto-medico" alt="Foto do Médico" />
+                    <span class="medico-nome" ng-bind="::medico.name"></span>
+                    <span class="especialidade-medica-nome" ng-bind="::especialidade_medica.name"></span>
+                </div>
+                <div class="descricao">
+                    <h2>Descrição</h2>
+                    <span class="descricao" ng-bind="::medico.curriculum"></span>
+                </div>
+                <div class="endereco" ng-if="locations.length > 0">
+                    <h2>Endereço<span ng-if="locations.length > 1">s</span></h2>
+                    <select ng-model="location" ng-options="item as (item.road + ' - ' + item.neighborhood.name + ' - ' + item.city.name + ' - ' + item.city.state.uF) for item in locations" ng-change="location_onChange()">
+                    </select>
+                    <div ng-if="location.phoneNumbers && (location.phoneNumbers.length > 0)" class="location-phones">
+                        <label>Contatos:</label> 
+                        <span ng-repeat="tel in location.phoneNumbers" class="phone">
+                            <span ng-bind="::tel.areaCode" class="area-code"></span>
+                            <span ng-bind="::tel.number" class="number"></span>
+                            <span class="separador">/</span>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <h2>Data</h2>
+                    <datetimepicker data-ng-model="dataSelecionada" data-datetimepicker-config="{startView:'day', minView:'day'}" data-before-render="datetimePicker_beforeRender($view, $dates, $leftDate, $upDate, $rightDate)" data-on-set-time="onTimeSet(newDate, oldDate)"></datetimepicker>
+                </div>
+                <div ng-if="horarios.length > 0">
+                    <h2>Horários</h2>
+                    <div class="horarios">
+                        <div ng-repeat="horario in horarios" ng-bind="::horario.t" ng-click="SelectHorario(horario)" ng-class="{'selected': horario.selected}"></div>
+                    </div>
+                </div>
+                <button class="agendar-consulta btn-color2" ng-click="AgendarConsulta()" ng-if="(data != '') && (horario != '')">Agendar Consulta</button>
+            </div>
+        </ion-content>
+    </ion-view>
+</div>

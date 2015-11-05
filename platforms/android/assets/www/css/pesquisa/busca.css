@@ -1,0 +1,34 @@
+﻿.pane-busca .search-results .list .item {
+    background: transparent url(../../images/lista-seta.png) no-repeat right center;
+    padding-right: 55px;
+    white-space: initial;
+}
+
+.pane-busca .search-results img.foto-medico {
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50% 50%;
+    -moz-border-radius: 50% / 50%;
+    border-radius: 50% / 50%;
+    float: left;
+    margin-right: 29px;
+}
+
+.pane-busca .search-results span.nome,
+.pane-busca .search-results span.endereco {
+    display: block;
+}
+
+.pane-busca .search-results span.nome {
+    margin-top: 18px;
+    color: #3F3F3F;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.pane-busca .search-results span.endereco {
+    color: #808080;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 5px;
+}

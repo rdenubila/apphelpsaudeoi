@@ -1,0 +1,47 @@
+﻿div.datetimepicker {
+    width: 100%;
+    font-size: 20px !important;
+}
+
+div.datetimepicker table {
+    width: 100%;
+    border: 2px solid #00A596;
+}
+
+div.datetimepicker thead {
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.datetimepicker .table th {
+    line-height: 40px;
+}
+
+div.datetimepicker thead th.right,
+.datetimepicker .right:hover {
+    background: url(../../images/datetimepicker-right.png) no-repeat right center !important;
+}
+
+.datetimepicker thead th.left,
+.datetimepicker .left:hover {
+    background: url(../../images/datetimepicker-left.png) no-repeat left center !important;
+}
+
+div.datetimepicker td.day {
+    line-height: 40px;
+    font-size: 18px;
+    border-right: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    background-color: #DEF5F8;
+}
+
+.datetimepicker .disabled {
+    background-color: #fff !important;
+}
+
+div.datetimepicker td.day.past,
+div.datetimepicker td.day.future {
+    color: #D6D6D6;
+}
+
+div.datetimepicker td.day.active {
+}

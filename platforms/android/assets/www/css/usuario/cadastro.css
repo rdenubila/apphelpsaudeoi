@@ -1,0 +1,70 @@
+﻿.pane-login div.form div.group span.icon.icon-email {
+    background-image: url(../../images/icon-email.png);
+}
+.pane-login div.form div.group.focus span.icon.icon-email {
+    background-image: url(../../images/icon-email-focus.png);
+}
+
+.pane-login div.form div.group span.icon.icon-telefone {
+    background-image: url(../../images/icon-telefone.png);
+}
+.pane-login div.form div.group.focus span.icon.icon-telefone {
+    background-image: url(../../images/icon-telefone-focus.png);
+}
+
+.pane-login div.form div.group span.icon.icon-plano-saude {
+    background-image: url(../../images/icon-plano-saude.png);
+}
+.pane-login div.form div.group.focus span.icon.icon-plano-saude {
+    background-image: url(../../images/icon-plano-saude-focus.png);
+}
+
+div.container-ddd {
+    width: 100%;
+    float: left;
+    margin-right: 2%;
+}
+@media (min-width: 480px) {
+    div.container-ddd {
+        width: 33%;
+    }
+}
+@media (min-width: 700px) {
+    div.container-ddd {
+        width: 23%;
+    }
+}
+@media (min-width: 900px) {
+    div.container-ddd {
+        width: 17%;
+    }
+}
+div.container-telefone {
+    width: 100%;
+    float: left;
+}
+@media (min-width: 480px) {
+    div.container-telefone {
+        width: 65%;
+    }
+}
+@media (min-width: 700px) {
+    div.container-telefone {
+        width: 75%;
+    }
+}
+@media (min-width: 900px) {
+    div.container-telefone {
+        width: 81%;
+    }
+}
+
+a.termos-de-uso {
+    margin-bottom: 68px;
+}
+
+button.cadastrar {
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+}

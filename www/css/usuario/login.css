@@ -1,0 +1,31 @@
+﻿.pane-login div.form div.group span.icon.icon-login {
+    background-image: url(../../images/icon-login.png);
+}
+.pane-login div.form div.group.focus span.icon.icon-login {
+    background-image: url(../../images/icon-login-focus.png);
+}
+
+.pane-login div.form div.group span.icon.icon-senha {
+    background-image: url(../../images/icon-senha.png);
+}
+.pane-login div.form div.group.focus span.icon.icon-senha {
+    background-image: url(../../images/icon-senha-focus.png);
+}
+
+.pane-login div.buttons a {
+    display: block;
+}
+
+.pane-login button.login {
+    display: block;
+    width: 247px;
+    margin: 0 auto 35px;
+}
+
+.pane-login a.esqueci-minha-senha {
+    margin-bottom: 123px;
+}
+
+.pane-login a.cadastro {
+    margin-bottom: 37px;
+}

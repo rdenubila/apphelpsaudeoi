@@ -1,0 +1,22 @@
+﻿<ion-header-bar class="main-color1">
+    <a class="button button-clear back" href="#/usuario/login">&nbsp;</a>
+    <img src="images/top-logos.png" />
+</ion-header-bar>
+<ion-view view-title="Login" class="pane-login">
+    <ion-content ng-controller="EsqueciSenhaController">
+        <h1>Cadastro</h1>
+        <div class="form">
+            <p>
+                <label for="email">E-mail</label><br />
+                <div class="group" ng-class="{'focus': email_focus == true}">
+                    <span class="icon icon-login"></span>
+                    <input type="text" id="email" ng-model="email" ng-focus="email_focus = true" ng-blur="email_focus = false" />
+                </div>
+            </p>
+        </div>
+        <div class="buttons main-color1">
+            <button class="redefinir-senha btn btn-color2" ng-click="RedefinirSenha()">Redefinir Senha</button>
+            <div class="clearfix"></div>
+        </div>
+    </ion-content>
+</ion-view>

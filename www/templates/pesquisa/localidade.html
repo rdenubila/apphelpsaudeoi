@@ -1,0 +1,23 @@
+﻿<div ng-controller="LocalidadeController">
+    <ion-header-bar class="main-color1">
+        <a class="button button-clear back" href="#/">&nbsp;</a>
+        <h1>Busca por Localidade</h1>
+        <img ng-src="{{user.Foto}}" alt="Foto do Usuário" class="usuario" />
+    </ion-header-bar>
+    <ion-view view-title="Localidade" class="pane-localidade">
+        <ion-content>
+            <select ng-model="estado" ng-options="item as item.name for item in estadoItems" ng-change="estado_onChange()">
+                <option value="" ng-show="estadoItems.length == 0">Carregando...</option>
+            </select>
+            <div class="title-bar">Estado</div>
+            <div class="search">
+                <img src="images/icon-pesquisar.png" />
+                <input type="text" placeholder="Pesquisar Cidade" ng-model="filterCidadeHash" />
+            </div>
+            <div class="title-bar">Cidade</div>
+            <ion-list class="search-results">
+                <ion-item ng-repeat="item in cidadeItems | filter: filterCidadeItems" ng-click="selectCidade(item)" href="{{item.link}}">{{item.name}}</ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-view>
+</div>

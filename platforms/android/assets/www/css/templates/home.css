@@ -1,0 +1,68 @@
+﻿.pane-home div.list {
+    width: 94%;
+    margin: 0 auto 48px;
+}
+.pane-home div.list .item {
+    border-left: none;
+    border-right: none;
+    background: transparent url(../../images/lista-seta.png) no-repeat right center;
+}
+.pane-home div.list .item:first-child {
+    border-top: none;
+}
+.pane-home div.list .item a {
+    padding-left: 105px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.pane-home div.list .item.especialidade-medica a {
+    background-image: url(../../images/icon-especialidade-medica.png);
+}
+.pane-home div.list .item.especialidade-medica.selected a {
+    background-image: url(../../images/icon-especialidade-medica-selecionado.png);
+}
+.pane-home div.list .item.localidade a {
+    background-image: url(../../images/icon-localidade.png);
+}
+.pane-home div.list .item.localidade.selected a {
+    background-image: url(../../images/icon-localidade-selecionado.png);
+}
+.pane-home div.list .item.forma-de-pagamento a {
+    background-image: url(../../images/icon-forma-de-pagamento.png);
+}
+.pane-home div.list .item.forma-de-pagamento.selected a {
+    background-image: url(../../images/icon-forma-de-pagamento-selecionado.png);
+}
+.pane-home div.list .item.nome-do-medico a {
+    background-image: url(../../images/icon-nome-do-medico.png);
+}
+.pane-home div.list .item.nome-do-medico.selected a {
+    background-image: url(../../images/icon-nome-do-medico-selecionado.png);
+}
+.pane-home div.list img {
+    float: left;
+    margin-right: 28px;
+}
+.pane-home div.list h2 {
+    line-height: 80px;
+    color: #B8DED9;
+    font-size: 2em;
+}
+.pane-home div.list .item.selected h2 {
+    color: #00A596;
+    font-weight: bold;
+}
+.pane-home button.pesquisar-medicos {
+    width: 100%;
+    margin-bottom: 4%;
+}
+.pane-home a.btn.login,
+.pane-home a.btn.cadastro {
+    width: 48%;
+}
+.pane-home a.btn.login {
+    float: left;
+}
+.pane-home a.btn.cadastro {
+    float: right;
+}
