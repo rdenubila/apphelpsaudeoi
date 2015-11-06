@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
   <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
@@ -7,10 +7,9 @@
         version     = "1.0.0" >
 
   <name>Oi HelpSaude</name>
-  <description>&#xD;
-  </description>
+  <description></description>
+
   <author href="http://cordova.io" email="dev@cordova.apache.org">NetSis - Sistemas Web</author>
-  <content src="index.html"/>
   
   <access origin="*"/>
 
