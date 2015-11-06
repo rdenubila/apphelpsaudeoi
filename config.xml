@@ -1,30 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
-  <widget xmlns   = "http://www.w3.org/ns/widgets"
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.netsis.OiHelpSaude"
         versionCode = "1" 
-        version     = "1.0.0" >
+        version     = "1.0" >
 
-  <name>Oi HelpSaude</name>
-  <description></description>
 
-  <author href="http://cordova.io" email="dev@cordova.apache.org">NetSis - Sistemas Web</author>
-  
-  <access origin="*"/>
+    <name>Oi HelpSaude</name>
 
-  <vs:features/>
-  <preference name="SplashScreen" value="screen"/>
-  <preference name="windows-target-version" value="8.1"/>
-  <preference name="windows-phone-target-version" value="8.1"/>
-  <preference name="Orientation" value="portrait"/>
-  <preference name="SplashScreenDelay" value="3000"/>
+    <description>
+        Aplicativo Mobile
+    </description>
 
-  <preference name="permissions" value="none"/>
-  <feature name="http://api.phonegap.com/1.0/network"/>
+    <author href="http://www.lazulistudio.com.br" email="rdenubila@gmail.com">
+        Rodrigo Denúbila / Lazuli Studio
+    </author>
 
-  <gap:plugin name="org.apache.cordova.network-information" />
+    <icon src="resources/icon.png" />
 
-  <icon src="resources/icon.png" />
+    <preference name="orientation" value="portrait" />
+    <preference name="prerendered-icon" value="true" />
+
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="webviewbounce" value="false" />
+
+    <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
+    <preference name="StatusBarBackgroundColor" value="#940e1b" />
+
+    <preference name="permissions" value="none"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+
+    <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
+    <gap:plugin name="org.apache.cordova.file-transfer" version="0.4.6" />
+    <gap:plugin name="com.jamiestarke.webviewdebug" version="1.0.8" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+
 
 </widget>
